@@ -57,8 +57,7 @@ Use the search bar to filter blogs by tags and easily find relevant content.
 Read More/Read Less:
 
 Expand or collapse blog descriptions for a concise or detailed view.
-## demo video
-[Watch the Video](prev.mp4)
+
 ## images
 ![homet](home.png)
 ![calender](calender.png)
