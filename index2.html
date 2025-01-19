@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Manager with Image Upload</title>
+  <link rel="stylesheet" href="style2.css">
+  
+</head>
+<body>
+  <header class="header">
+    <h1>Editing Tools </h1>
+  </header>
+  <marquee behavior="" direction="Left"><h4>here in this section you can edit preview blog after editing copy the blog and click on publish to publish blog  </h4></marquee>
+  <main class="container">
+    <!-- Rich Text Editor -->
+    <section class="card">
+      <!-- <h2>Rich Text Editor</h2> -->
+      <div class="toolbar">
+        <button onclick="formatText('bold')">Bold</button>
+        <button onclick="formatText('italic')">Italic</button>
+        <button onclick="formatText('underline')">Underline</button>
+        <button onclick="formatText('subscript')">Subscript</button>
+        <button onclick="formatText('superscript')">Superscript</button>
+        <button onclick="formatText('undo')">Undo</button>
+        <button onclick="formatText('redo')">Redo</button>
+        <button onclick="formatText('justifyLeft')">Align Left</button>
+        <button onclick="formatText('justifyCenter')">Align Center</button>
+        <button onclick="formatText('justifyRight')">Align Right</button>
+        <button onclick="formatText('justifyFull')">Justify</button>
+
+
+<button onclick="formatText('insertOrderedList')">Numbered List</button>
+        <button onclick="formatText('insertUnorderedList')">Bullet List</button>
+        <button onclick="formatText('insertHorizontalRule')">Horizontal Line</button>
+        <input type="color" id="textColor" onchange="setTextColor(this.value)" />
+        
+        <button class="save-draft-button" onclick="saveDraft()">Save Draft</button>
+        <input type="color" id="bgColor" onchange="setBackgroundColor(this.value)" />
+        <select onchange="setFont(this.value)">
+            <option value="">Default Font</option>
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+        <label for="upload-image" class="image-upload-btn ">Upload Image</label>
+        <input type="file" id="upload-image" accept="image/*">
+    </div>
+      </div>
+      <div id="editor" contenteditable="true" class="editor" placeholder="Write your blog here..."></div>
+      <button id="save-blog-btn">Save Blog</button>
+      <button id="save-blog-btn" class="blog-ed"><a href="index.html">Publish Blog</a></button>
+      <div id="saved-blogs">
+        <h3> Blogs Previews:</h3>
+        <ul id="blogs-list"></ul>
+      </div>
+    </section>
+  </main>
+ <script src="script2.js"></script>
+</body>
+</html>

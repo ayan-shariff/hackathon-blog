@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Calendar</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <div class="calendar-container">
+      <h1>Calendar</h1>
+      <div class="calendar-header">
+        <button id="prevMonth" class="btn">Previous</button>
+        <h2 id="currentMonth"></h2>
+        <button id="nextMonth" class="btn">Next</button>
+      </div>
+      <div class="calendar" id="calendar"></div>
+      <div class="event-form" id="eventForm">
+        <h2>Events for <span id="selectedDate"></span></h2>
+        <ul id="eventList"></ul>
+        <form id="addEventForm">
+          <input
+            type="time"
+            id="eventTime"
+            required
+            placeholder="click on 👉🕧"
+          />
+          <input
+            type="text"
+            id="eventNote"
+            placeholder="Event description"
+            required
+          />
+          <button type="submit" class="btn">Add Event</button>
+        </form>
+      </div>
+    </div>
+    <script src="script3.js"></script>
+  </body>
+</html>
